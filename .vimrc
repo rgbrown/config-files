@@ -1,4 +1,4 @@
-execute pathogen#infect()
+xecute pathogen#infect()
 
 set nocompatible
 syntax enable
@@ -11,9 +11,7 @@ filetype plugin indent on
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
-let g:Tex_ViewRule_pdf='open -a Preview'
-let g:Tex_ViewRule_dvi='open -a Preview'
-let g:Tex_ViewRule_ps='open -a Preview'
+let g:Tex_ViewRule_pdf='sumatraPDF -reuse-instance'
 
 "" Whitespace and indentation
 set backspace=indent,eol,start
@@ -35,11 +33,11 @@ if has("gui_running")
 endif
 
 "" appearance
-"" colorscheme solarized
-"" let g:solarized_termcolors=256
+colorscheme solarized
+let g:solarized_termcolors=256
 "" set t_Co=16
 "" colorscheme solarized
-"" set t_Co=256
+set t_Co=256
 
 
 
