@@ -1,4 +1,4 @@
-xecute pathogen#infect()
+execute pathogen#infect()
 
 set nocompatible
 syntax enable
